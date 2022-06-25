@@ -5,8 +5,8 @@ function About(){
     return(
         <>
         <div className="aboutContainer">
-        <h1>Welcome to Address Book</h1>
-        <img src={logo} alt="" />
+            <h1>Welcome to Address Book</h1>
+            <img src={logo} alt="" />
         </div>
         </>
     )
