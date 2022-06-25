@@ -32,4 +32,36 @@ width: 30%;
   justify-content: space-between;
   height: 80px;
 }
+.container{
+  display: flex;
+  justify-content: center;
+}
+.myform{
+  height:450px;
+  width:400px;
+  border: 2px solid rgb(212, 204, 204);
+  font-size: 18px;
+  padding: 13px;
+  border-radius:8px;
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+
+
+}
+.myform>h5{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.myform>input{
+  width:370px;
+  height:45px;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
