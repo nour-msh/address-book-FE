@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import SignupForm from "./SignupForm";
+import LoginForm from "./LoginForm";
 
 function Nav(){
 
     const [openForm, setSignupForm] = useState(false);
+    const [showForm, setLoginForm] = useState(false);
 
     return(
         <>
@@ -11,6 +13,9 @@ function Nav(){
 
         <div>
             <button className="btn orange"
+            onClick={() => {
+                setLoginForm(!showForm);
+            }}
             >
             Login
             </button>
@@ -24,6 +29,7 @@ function Nav(){
             Sign Up</button>
         </div>
     </nav>
+    <div>{showForm && <LoginForm/>}</div>
     <div>{openForm && <SignupForm/>}</div>
         </>
     )
