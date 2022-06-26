@@ -10,7 +10,6 @@ function App() {
   return (
    <>
       <Router>
-        <Nav/>
         <Routes>
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/user" element={<User />} />

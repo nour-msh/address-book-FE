@@ -1,10 +1,9 @@
+import AddContactForm from "../component/AddContactForm";
+
 const User = () => {
     return (
-        <div>
-            <h1>Hello There!</h1>
-           
-        </div>
-   
+
+        <AddContactForm/>
    )
 };
    export default User;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import axios from "axios";
 function LoginForm() {
     const[myEmail,setMyEmail]=useState("");
     const[myPassword,setMyPassword]=useState("");
@@ -12,7 +12,7 @@ function LoginForm() {
           axios({
             method:"post",
             data,
-            url:"http://127.0.0.1:8000/api/login",
+            url:"x",
           }).then(res=>console.log(res)).catch(error=>console.log(error))
       }
 return (
