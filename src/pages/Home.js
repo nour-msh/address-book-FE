@@ -4,8 +4,8 @@ import Nav from "../component/Nav";
 const Home = () => {
     return(
           <>
-          <Nav/>
-              <About/>
+            <Nav/>
+            <About/>
           </>
     )}
   export default Home;
