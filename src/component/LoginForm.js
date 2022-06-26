@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
+
+
 function LoginForm() {
   const [myEmail, setMyEmail] = useState("");
   const [myPassword, setMyPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const logIn = (e) => {
     const data = {
       email: myEmail,
       password: myPassword,
@@ -13,7 +15,7 @@ function LoginForm() {
     axios({
       method: "post",
       data,
-      url: "x",
+      url: "http://localhost:5000/api/user/login",
     })
       .then((res) => console.log(res))
       .catch((error) => console.log(error));
@@ -36,7 +38,7 @@ function LoginForm() {
           value={myPassword}
           onChange={(e) => setMyPassword(e.target.value)}
         />
-        <button className="btn orange" onClick={handleSubmit}>
+        <button className="btn orange" onClick={logIn}>
           Login
         </button>
       </form>

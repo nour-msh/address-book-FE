@@ -1,9 +1,9 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route ,Link} from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React from "react";
 import User from "./pages/User";
 import Home from "./pages/Home";
-import Nav from './component/Nav';
+// import Nav from './component/Nav';
 
 
 function App() {

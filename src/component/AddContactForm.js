@@ -20,7 +20,7 @@ function AddContactForm() {
     axios({
       method: "post",
       data,
-      url: "http://localhost:3100/api/contact",
+      url: "http://localhost:5000/api/contact",
     })
       .then((res) => console.log(res))
       .catch((error) => console.log(error));
