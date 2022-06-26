@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import SignupForm from "./SignupForm";
 import LoginForm from "./LoginForm";
+const { Link } = require("react-router-dom");
+
 
 function Nav(){
 
@@ -9,6 +11,12 @@ function Nav(){
 
     return(
         <>
+        <Link to="/home" >
+      Home
+      </Link>
+      <Link to="/user" >
+      User
+      </Link>
     <nav className="nav-bar">
 
         <div>

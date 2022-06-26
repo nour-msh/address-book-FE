@@ -1,16 +1,18 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route ,Link} from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import User from "./pages/User";
 import Home from "./pages/Home";
-
+import Nav from './component/Nav';
 
 
 function App() {
   return (
    <>
       <Router>
+        <Nav/>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/home" element={<Home />} />
           <Route exact path="/user" element={<User />} />
         </Routes>
       </Router>

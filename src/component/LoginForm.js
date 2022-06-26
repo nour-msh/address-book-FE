@@ -3,6 +3,18 @@ import React, { useState } from 'react';
 function LoginForm() {
     const[myEmail,setMyEmail]=useState("");
     const[myPassword,setMyPassword]=useState("");
+
+    const handleSubmit = (e)=> {
+        const data=new FormData
+        data.append('email',myEmail)
+        data.append('password',myPassword)
+        e.preventDefault();
+          axios({
+            method:"post",
+            data,
+            url:"http://127.0.0.1:8000/api/login",
+          }).then(res=>console.log(res)).catch(error=>console.log(error))
+      }
 return (
     <div className="container">
       <form className="myform login">

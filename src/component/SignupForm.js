@@ -2,11 +2,21 @@ import React, { useState } from 'react';
 
 function SignupForm(){
     const[myName,setName]=useState("");
-
     const[email,setEmail]=useState("");
     const[password,setPassword]=useState("");
 
 
+    const handleSubmit = (e)=> {
+        const data=new FormData
+        data.append('email',email)
+        data.append('password',password)
+        e.preventDefault();
+          axios({
+            method:"post",
+            data,
+            url:"http://127.0.0.1:8000/api/register",
+          }).then(res=>console.log(res)).catch(error=>console.log(error))
+      }
     return (
         <div className="container">
           <div  className="myform">
@@ -35,7 +45,7 @@ function SignupForm(){
                 value={password} onChange={(e)=>setPassword(e.target.value)}
              
               />
-              <button className="btn orange" onClick={handleSubmit}
+              <button className="btn orange" onClick={handleSubmit} 
                >Sign Up</button>
           </div>
         </div>
