@@ -6,4 +6,6 @@ const Contact = () => {
             <AddedContact/>
           </>
     )}
-  export default Contact;
+
+
+    export default Contact;

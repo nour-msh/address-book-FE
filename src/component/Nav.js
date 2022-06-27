@@ -17,6 +17,9 @@ function Nav(){
       <Link to="/user" >
       User
       </Link>
+      <Link to="/contact" >
+      Contact
+      </Link>
     <nav className="nav-bar">
 
         <div>
